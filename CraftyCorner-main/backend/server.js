@@ -7,7 +7,10 @@ process.on("uncaughtException", (err) => {
   console.log(`Error: ${err.message}`);
   console.log(`shutting down the server for handling uncaught exception`);
 });
-
+app.use(cors({
+  origin: ['https://craftycornershop.netlify.app/',],
+  credentials: true
+}));
 // config
 if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({
@@ -30,7 +33,7 @@ app.get("/", (req, res) => {
 // create server
 const server = app.listen(process.env.PORT, () => {
   console.log(
-    `Server is running on http://localhost:${process.env.PORT}`
+    `Server is running on https://craftycorner-j942.onrender.com/`
   );
 });
 
