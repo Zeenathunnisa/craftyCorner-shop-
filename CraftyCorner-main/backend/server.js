@@ -24,7 +24,9 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET
 })
 
-
+app.get("/", (req, res) => {
+  res.send("Express App is Running");
+});
 // create server
 const server = app.listen(process.env.PORT, () => {
   console.log(
