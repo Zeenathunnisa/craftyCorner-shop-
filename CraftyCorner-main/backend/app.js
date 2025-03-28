@@ -8,7 +8,7 @@ const cors = require("cors");
 app.use(cors({
   origin: [
     "https://ccshop.netlify.app",
-    "http://localhost:3000"
+    "https://ccshop.netlify.app"
   ],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],

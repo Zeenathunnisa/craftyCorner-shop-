@@ -9,7 +9,7 @@ const server = http.createServer(app);
 app.use(cors({
   origin: [
     "https://ccshop.netlify.app", // Your Netlify frontend
-    "http://localhost:3000"       // For local development
+    "https://ccshop.netlify.app"       // For local development
   ],
   credentials: true
 }));
@@ -21,7 +21,7 @@ const io = socketIO(server, {
   cors: {
     origin: [
       "https://ccshop.netlify.app",
-      "http://localhost:3000"
+      "https://ccshop.netlify.app"
     ],
     methods: ["GET", "POST"],
     credentials: true
