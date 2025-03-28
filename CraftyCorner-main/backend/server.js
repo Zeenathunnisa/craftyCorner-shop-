@@ -1,16 +1,13 @@
 const app = require("./app");
 const connectDatabase = require("./db/Database");
 const cloudinary = require("cloudinary");
-const cors = require("cors");
+
 // Handling uncaught Exception
 process.on("uncaughtException", (err) => {
   console.log(`Error: ${err.message}`);
   console.log(`shutting down the server for handling uncaught exception`);
 });
-app.use(cors({
-  origin: ['https://craftycornershop.netlify.app/',],
-  credentials: true
-}));
+
 // config
 if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({
