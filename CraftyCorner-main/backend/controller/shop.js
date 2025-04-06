@@ -39,7 +39,7 @@ router.post("/create-shop", catchAsyncErrors(async (req, res, next) => {
 
     const activationToken = createActivationToken(seller);
 
-    const activationUrl = `https://ccshop.netlify.app/seller/activation/${activationToken}`;
+    const activationUrl = `https://craftycorner-j942.onrender.com/seller/activation/${activationToken}`;
 
     try {
       await sendMail({
