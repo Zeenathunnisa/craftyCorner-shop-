@@ -35,7 +35,7 @@ router.post("/create-user", async (req, res, next) => {
 
     const activationToken = createActivationToken(user);
 
-    const activationUrl = `https://ccshop.netlify.app/activation/${activationToken}`;
+    const activationUrl = `https://craftycorner-j942.onrender.com/activation/${activationToken}`;
 
     try {
       await sendMail({
