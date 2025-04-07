@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 // create server
 const server = app.listen(process.env.PORT, () => {
   console.log(
-    `Server is running on https://craftycorner-j942.onrender.com/`
+    `Server is running on https://craftycorner.onrender.com/`
   );
 });
 

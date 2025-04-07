@@ -8,8 +8,8 @@ const server = http.createServer(app);
 // Enhanced CORS configuration
 app.use(cors({
   origin: [
-    "https://ccshop.netlify.app", // Your Netlify frontend
-    "https://ccshop.netlify.app"       // For local development
+    "https://craftycornerhub.netlify.app/", // Your Netlify frontend
+    "https://craftycornerhub.netlify.app/"       // For local development
   ],
   credentials: true
 }));
@@ -20,8 +20,8 @@ app.use(express.json());
 const io = socketIO(server, {
   cors: {
     origin: [
-      "https://ccshop.netlify.app",
-      "https://ccshop.netlify.app"
+      "https://craftycornerhub.netlify.app/",
+      "https://craftycornerhub.netlify.app/"
     ],
     methods: ["GET", "POST"],
     credentials: true
