@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "posthog-js": "^1.234.10",
+    "react-ga4": "^2.1.0"
+  }
+}
