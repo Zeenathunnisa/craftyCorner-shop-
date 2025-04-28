@@ -55,9 +55,9 @@ const Header = ({ activeHeading }) => {
     <>
       <div className={`${styles.section}`}>
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
-          <div>
+          <div className="text-[27px] text-center md:text-start font-[600] font-Roboto pb-[20px]">
             <Link to="/">
-            <h2>CraftyCorner</h2>
+            <h2 className="text-[30px] text-center md:text-start font-[800] font-Roboto pb-[20px]">CraftyCorner</h2>
             </Link>
           </div>
           {/* search box */}
@@ -211,13 +211,9 @@ const Header = ({ activeHeading }) => {
               onClick={() => setOpen(true)}
             />
           </div>
-          <div>
+          <div className="text-[27px] text-center md:text-start font-[600] font-Roboto pb-[20px]">
             <Link to="/">
-              <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-                alt=""
-                className="mt-3 cursor-pointer"
-              />
+              <h1>CraftyCorner</h1>
             </Link>
           </div>
           <div>

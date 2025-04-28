@@ -194,7 +194,7 @@ export const navItems = [
       title: "Handmade Jewelry",
       subTitle: "Crafted with love and precision",
       image_Url:
-        "https://images.unsplash.com/photo-1593491894792-e0fa0a4cb1ae?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjQ2NXwwfDF8c2VhY2h8Mnx8amV3ZWxyeXxlbnwwfDB8fHxlbmxhcmd8aW5zdHJ8c2VhcmNofGVu&ixlib=rb-1.2.1&q=80&w=1080",
+        "https://res.cloudinary.com/dotvmlvlr/image/upload/v1742924778/avatars/dvbvnppwwi8ghgvqfk41.jpg",
     },
     {
       id: 2,
